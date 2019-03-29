@@ -1,3 +1,4 @@
+//print isosceles triangle star pattern series of n rows
 #include <stdio.h>
 #include <stdlib.h>
 

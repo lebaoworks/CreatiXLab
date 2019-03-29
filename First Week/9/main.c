@@ -1,3 +1,5 @@
+//input a matrix MxN and a vector size N
+//multiply the matrix by the vector
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,13 +16,16 @@ int main()
     scanf("%d",&m);
     printf("N=");
     scanf("%d",&n);
+	
     printf("A:\n");
     for (i=0; i<m; i++)
         for (j=0; j<n; j++)
             scanf("%d",&a[i][j]);
+		
     printf("X:\n");
     for (i=0; i<n; i++)
         scanf("%d",&b[i]);
+	
     for (i=0; i<m; i++)
         for (j=0; j<n; j++)
             c[i] += a[i][j]*b[j];

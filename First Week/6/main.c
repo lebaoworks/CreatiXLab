@@ -1,3 +1,4 @@
+//input a sentence and normalize it
 #include <stdio.h>
 #include <stdlib.h>
 
