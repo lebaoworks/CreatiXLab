@@ -94,5 +94,7 @@ int main()
     bubble_sort(array,n);
     insertion_sort(array,n);
     selection_sort(array,n);
+	
+	getchar();
     return 0;
 }
