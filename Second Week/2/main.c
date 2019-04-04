@@ -9,14 +9,14 @@ void bubble_sort(int* array, int n)
 
     int i,j,k;
     //sorting
-    for (i=0; i<n; i++)
-        for (j=i+1; j<n; j++)
-            //arr[i] > arr[j] -> swap
-            if (buffer[i]>buffer[j])
+    for (i=0; i<n-1; i++)
+        for (j=0; j<n-i-1; j++)
+            //arr[j] > arr[j+1] -> swap
+            if (buffer[j]>buffer[j+1])
             {
-                k = buffer[i];
-                buffer[i] = buffer[j];
-                buffer[j] = k;
+                k = buffer[j];
+                buffer[j] = buffer[j+1];
+                buffer[j+1] = k;
             }
 
     printf("\nBubble Sort: ");
@@ -94,7 +94,7 @@ int main()
     bubble_sort(array,n);
     insertion_sort(array,n);
     selection_sort(array,n);
-	
+
 	getchar();
     return 0;
 }
