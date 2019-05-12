@@ -1,0 +1,36 @@
+CREATE DATABASE Chat_Server;
+
+USE Chat_Server;
+
+CREATE TABLE Account
+(
+	user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user_name VARCHAR(50) NOT NULL
+);
+CREATE TABLE Chat_Room
+(
+	room_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user1_id INT,
+	user2_id INT,
+	FOREIGN KEY (user1_id) REFERENCES Account(user_id),
+	FOREIGN KEY (user2_id) REFERENCES Account(user_id)
+);
+CREATE TABLE Message
+(
+	mess_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user_id INT,
+	room_id INT,
+	message TEXT,
+	FOREIGN KEY (user_id) REFERENCES Account(user_id),
+	FOREIGN KEY (room_id) REFERENCES Chat_Room(room_id)
+);
+CREATE TABLE Friend
+(
+	relation_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user1_id INT,
+	user2_id INT,
+	room_id INT,
+	FOREIGN KEY (user1_id) REFERENCES Account(user_id),
+	FOREIGN KEY (user2_id) REFERENCES Account(user_id),
+	FOREIGN KEY (room_id) REFERENCES Chat_Room(room_id)
+);
