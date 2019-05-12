@@ -3,7 +3,7 @@
 #include <time.h> //execution time
 #include <windows.h> //sleep
 #include <semaphore.h>
-#define N 1200
+#define N 120
 
 sem_t semaphore;
 int number = 0;
