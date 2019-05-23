@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+div.container {
+    display: table;
+    height: 100vh;
+    width: 100vw;
+}
+div.header {
+    display: table;
+    height: 10%;
+    width: 100%;
+}
+div.middle {
+    display: table;
+    height: 80%;
+    width: 100%;
+}
+div.left {
+    display: table-cell;
+    height: 100%;
+    width: 15%;
+}
+div.center {
+    display: table cell;
+    height: 100%;
+    border: solid 2px black;
+}
+div.right {
+    display: table-cell;
+    height: 100%;
+    width: 15%;
+}
+div.bottom {
+    display: table;
+    height: 10%;
+    width: 100%;
+}
+
+
+form.form-input-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+div.form-header-container {
+    display: table;
+    height: 20%;
+    width: 100%;
+}
+div.form-input-entry-container {
+    display: table;
+    height: 10%;
+    width: 100%;
+}
+div.form-input-submit-container {
+    display: table;
+    height: 20%;
+    width: 100%;
+}
+
+div.form-header-container p {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3vw;
+}
+div.form-input-entry-label-container {
+    display: table-cell;
+    height: 100%;
+    width: 40%;
+    vertical-align: middle;
+    text-align: center;
+}
+div.form-input-entry-input-container {
+    display: table-cell;
+    height: 100%;
+    width: 60%;
+    vertical-align: middle;
+    text-align: left;
+}
+div.form-input-submit-button-container {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+div.form-input-entry-label-container p {
+    font-size: 2vh;
+}
+div.form-input-entry-input-container input[type="text"] {
+    width: 35vw;
+    height: 4vh;
+    font-size: 3vh;
+}
+div.form-input-entry-input-container input[type="password"] {
+    width: 35vw;
+    height: 4vh;
+    font-size: 3vh;
+}
+div.form-input-entry-input-container select {
+    width: 5vw;
+    height: 4vh;
+    font-size: 3vh;
+}
+div.form-input-submit-button-container input[type="submit"] {
+    height: 50%;
+    width: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

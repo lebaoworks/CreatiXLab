@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="middle">
+            <div class="left"></div>
+            <div class="center">
+                <form class="form-input-container" action="register.php">
+                    <div class="form-header-container">
+                        <p>Register</p>
+                    </div>
+
+
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Email:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="text" name="email">
+                        </div>
+                    </div>
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Username:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="text" name="username">
+                        </div>
+                    </div>
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Fullname:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="text" name="fullname">
+                        </div>
+                    </div>
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Gender:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="text" name="gender" list="gender" style="width: 20%">
+                            <datalist id="gender">
+                                <option value="Male">
+                                <option value="Female">
+                            </datalist>
+                        </div>
+                        
+                    </div>
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Password:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="password" name="password">
+                        </div>
+                    </div>
+                    <div class="form-input-entry-container">
+                        <div class="form-input-entry-label-container">
+                            <p>Confirm Password:</p>
+                        </div>
+                        <div class="form-input-entry-input-container">
+                            <input type="password" name="confirm_password">
+                        </div>
+                    </div>
+
+
+                    <div class="form-input-submit-container">
+                        <div class="form-input-submit-button-container">
+                            <input type="submit" name="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+
+
+</body>
+
+</html>
